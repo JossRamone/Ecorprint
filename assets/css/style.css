@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 400px auto 80px; /*aqui le puedo cambiar el tamaño*/
+    grid-template-areas: "navbar navbar navbar navbar"
+        "header header header header"
+        "main   main   main main"
+        "footer footer footer footer";
+}
+
+.tarjeta {
+    background-color: antiquewhite;
+}
+
+.tarjeta h5 {
+    font-size: 24px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.grandeTarjeta {
+    width: 80%;
+}
+
+.textoNosotros {
+    background-color: rgb(166, 228, 153);
+}
+
+.textoNosotros {
+    font-size: 20px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin: 8px;
+}
+
+.descripcionContacto {
+    color: rgb(255, 127, 159);
+    font-style: initial;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.funkos {
+    background-color: antiquewhite;
+}
+
+.funkos h5 {
+    font-size: 24px;
+}
+
+.funkos p {
+    font-size: 15px;
+}
+
+.funkos img {
+    width: 100%;
+}
+
+.grandeFunkos {
+    width: 80%;
+}
+
+.serviciot {
+    background-color: blueviolet;
+}
+
+.serviciot h5 {
+    font-size: 24px;
+}
+
+.serviciot p {
+    font-size: 15px;
+}
+
+.serviciot img {
+    width: 80%;
+}
+
+.parrafos {
+    background-color: antiquewhite;
+}
+
+.cuadrado {
+    width: 400px;
+    height: 300px;
+    background-image: url("../Imagenes/Nosotross.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    margin: 10px;
+    color: brown;
+}
+
+
+.bloque__titulo {
+    text-align: center;
+}
+
+.bloque__description {
+    margin: 5px;
+}
+
+.bloque__img {
+    width: 300px;
+}
+
+.bloque__btn {
+    margin: 10px;
+}
+
+/*.bloque__description--negrito{
+    font-weight: 800; esto sirve para que la letra se ponga mas negra*/
+/*color: chocolate; darle corlor a la letra
+}*/
+
+header img {
+    /*el tamaño de la imagen de fondo*/
+    width: 100%;
+}
+
+.navbar ul {
+    margin: 5px;
+    /*esto sirve para que el sub menu se acomode, si le pones mas, no cuadra*/
+    list-style: flex;
+
+}
+
+.navbar {
+    grid-area: navbar;
+    /*width: 100%;
+    /*margin: 0;
+    height: 60px;*/
+    background-color: #5900c3;
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 20;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Esto sirve para centrar menu en la barra*/
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    /* esto es para que la barra se desplegue hacia abajo*/
+}
+
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /*es para que no tenga subrayado las palabras*/
+}
+
+.navbar ul li ul {
+    display: none;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #8a2be2;
+}
+
+.header {
+    grid-area: header;
+    background-image: url(../Imagenes/2738.jpg);
+    /*height: 400px;*/
+    background-size: cover;
+    /*Sirve para completar la imagen y no se repita*/
+    background-repeat: no-repeat;
+    /*la imagen no se repita*/
+    background-position: center;
+    /*la imagen quede centrada*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*no se como pero aline el texto al centro*/
+
+}
+
+
+.headerImg h1 {
+    color: white;
+    text-align: center;
+}
+
+.redes {
+    margin-right: 5px;
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    /*esto ya se puso en la parte de abajo y sive para que no se estire la imagen*/
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bloque__titulo {
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.bloque__img {
+    width: 80%;
+}
+
+.btn {
+    background-color: #8a2be2;
+    padding: 8px 12px;
+    /*tamaño del boton*/
+    color: white;
+    border: 0px;
+    /*quitarle el marco negro del boton*/
+    border-radius: 5px;
+    /*redondear el boton*/
+}
+
+.bloques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer {
+    grid-area: footer;
+    /*width: 100%;
+    height: 80px;*/
+    background-color: #8a2be2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer h5 {
+    color: white;
+    font-size: 18px;
+}
+
+/*CONTACTOS*/
+.form-register{
+    width: 400px;
+    background-color: aquamarine;
+    padding: 30px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #8a2be2;
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+
+.form-register a{
+    color:#24303c;
+}
+
+.botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+    
